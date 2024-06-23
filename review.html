@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: lightgrey ;
+            color: rgb(0, 0, 0);
+        }
+        .inactive {
+            background-color: lightgray;
+            color: black;
+            outline: none;
+        }
+        img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/accountDetails.html" class="active">Step 1: Account</a>
+        <a href="/personalDetails.html" class="inactive">Step 2: Personal Details</a>
+        <a href="/review.html" class="inactive">Step 3: Your Review</a>
+    </div>
+    <div>
+        <h2>Your Review</h2>
+        <form>
+            <label>How did you hear about us?</label>
+            <select>
+                <option disabled selected>Select your option</option>
+                <option>Social Media</option>
+                <option>Friend</option>
+                <option>Advertisement</option>
+            </select><br><br>
+
+            <label>Would you visit again?</label><br>
+            <input type="radio">
+            <label for="yes">Yes</label>
+            <input type="radio">
+            <label for="no">No</label>
+            <input type="radio">
+            <label for="maybe">Maybe</label><br><br>
+
+            <label for="comments">Comments:</label>
+            <textarea placeholder="Enter your comments here..."></textarea><br><br>
+
+            <label>Documents:</label>
+            <input type="file"><br><br>
+
+            <label>
+                <input type="checkbox" checked>
+                Sign me up for email updates
+            </label><br><br>
+
+                <a href="personalDetails.html">
+                    <img src="/back.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="/submit.png" alt="">
+                </a>
+        </form>
+    </div>
+</body>
+</html>

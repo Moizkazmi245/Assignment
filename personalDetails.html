@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: lightgrey ;
+            color: rgb(0, 0, 0);
+        }
+        .inactive {
+            background-color: lightgray;
+            color: black;
+            outline: none;
+        }
+        img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/accountDetails.html" class="active">Step 1: Account</a>
+        <a href="/personalDetails.html" class="inactive">Step 2: Personal Details</a>
+        <a href="/review.html" class="inactive">Step 3: Your Review</a>
+    </div>
+    <div class="form-container">
+        <h2>Personal Details</h2>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter First Name"><br><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name"><br><br>
+            <label for="cnic">CNIC:</label>
+            <input type="text" id="cnic" name="cnic" placeholder="Enter CNIC"><br><br>
+            <label for="social-link">Social Link:</label>
+            <input type="text" id="social-link" name="social-link" placeholder="Enter Facebook/LinkedIn profile link"><br><br>
+            
+                <a href="accountDetails.html" class="button back">
+                    <img src="/back.png" alt="">
+                </a>
+                <a href="review.html" class="button next">
+                    <img src="/next.png" alt="">
+                </a>
+        
+        </form>
+    </div>
+</body>
+</html>

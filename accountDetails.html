@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: lightgrey ;
+            color: rgb(0, 0, 0);
+        }
+        .inactive {
+            background-color: lightgray;
+            color: black;
+            outline: none;
+        }
+        img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/accountDetails.html" class="active">Step 1: Account</a>
+        <a href="/personalDetails.html" class="inactive">Step 2: Personal Details</a>
+        <a href="/review.html" class="inactive">Step 3: Your Review</a>
+    </div>
+
+    <div>
+        <h2>Step 1: Account</h2>
+        <form>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password"><br><br>
+        </form>
+        <a href="/index.html">
+            <img src="/back.png" alt="">
+        </a>
+        <a href="/personalDetails.html">
+            <img src="/next.png" alt="">
+        </a>
+    </div>
+  </body>
+</html>
